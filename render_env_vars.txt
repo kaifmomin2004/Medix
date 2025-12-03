@@ -1,0 +1,10 @@
+MONGO_URI=mongodb+srv://kaifmominEHR:MK%40ehrdb@ehr.lj7zyl4.mongodb.net/?retryWrites=true&w=majority
+JWT_SECRET=kunal_kaif_zaid_abdul
+RPC_URL=https://eth-sepolia.g.alchemy.com/v2/-gd1JFJ09cwUlElLXVYf4
+PRIVATE_KEY=0ccff4b4b583bbb3a0ec4e6ae05337fd00800b9b55d186e58b23cc7059882753
+CONTRACT_ADDRESS=0x102ab3AdfE396bbc8b341F9Aae66d7f8A7553FD7
+ADMIN_EMAIL=admin@ehr.com
+ADMIN_PASSWORD=Pass123@
+ADMIN_NAME=System Administrator
+ADMIN_WALLET_ADDRESS=0x1234567890123456789012345678901234567890
+FRONTEND_URL=https://your-vercel-frontend-url.vercel.app
