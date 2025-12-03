@@ -24,7 +24,7 @@ export function LoginForm() {
       const response = await authApi.login(email, password)
       localStorage.setItem('token', response.token)
       localStorage.setItem('user', JSON.stringify(response.user))
-      
+
       // Redirect based on role
       if (response.user.role === 'Admin') {
         router.push('/admin')
@@ -48,7 +48,7 @@ export function LoginForm() {
         <div className="relative z-10 flex flex-col justify-between p-12 text-white w-full">
           {/* Header */}
           <div className="flex items-center space-x-3">
-            <button 
+            <button
               onClick={() => router.push('/')}
               className="flex items-center space-x-3 hover:opacity-80 transition-opacity"
             >
@@ -63,9 +63,9 @@ export function LoginForm() {
           <div className="space-y-6">
             {/* Healthcare Illustration */}
             <div className="flex justify-center items-center">
-              <img 
-                src="/assets/landing.svg" 
-                alt="Healthcare Illustration" 
+              <img
+                src="/assets/landing.svg"
+                alt="Healthcare Illustration"
                 width={320}
                 height={200}
                 style={{ display: 'block', background: 'none' }}
@@ -90,7 +90,7 @@ export function LoginForm() {
         <div className="max-w-md w-full space-y-8">
           {/* Mobile Header */}
           <div className="lg:hidden text-center">
-            <button 
+            <button
               onClick={() => router.push('/')}
               className="mx-auto h-12 w-12 bg-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors"
             >
@@ -166,7 +166,7 @@ export function LoginForm() {
 
             <div className="text-center mt-6">
               <p className="text-sm text-gray-600">
-                Don't have an account yet?{' '}
+                Don&apos;t have an account yet?{' '}
                 <button
                   onClick={() => router.push('/register')}
                   className="text-teal-600 hover:text-teal-500 font-medium"
