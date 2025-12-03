@@ -56,7 +56,7 @@ const upload = multer({
 
 // Middleware
 app.use(cors({
-  origin: ["http://localhost:3000", process.env.FRONTEND_URL || "*"], // Allow frontend origin
+  origin: ["http://localhost:3000", "https://medix-9q3ospxi5-mohammadkaif-momins-projects.vercel.app", process.env.FRONTEND_URL || "*"], // Allow frontend origin
   credentials: true
 }));
 app.use(bodyParser.json());
